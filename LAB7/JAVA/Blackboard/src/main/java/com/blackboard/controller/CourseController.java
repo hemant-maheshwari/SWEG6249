@@ -22,4 +22,9 @@ public class CourseController {
 		return courseService.getAllCourses();
 	}
 	
+	@GetMapping("test")
+	public Course test() {
+		return courseService.find(2);
+	}
+	
 }

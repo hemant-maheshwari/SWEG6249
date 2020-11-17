@@ -18,4 +18,8 @@ public class CourseService {
 		return (ArrayList<Course>) courseRepository.findAll();
 	}
 	
+	public Course find(Integer id) {
+		return courseRepository.findById(id).get();
+	}
+	
 }
